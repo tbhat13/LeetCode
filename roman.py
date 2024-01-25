@@ -1,6 +1,4 @@
 class Solution(object):
-    #s is a string
-    #return an int
     def romanToInt(self, s):
         if not 1 <= len(s) <= 15:
             return "Not a valid roman numeral"
