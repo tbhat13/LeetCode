@@ -1,8 +1,10 @@
-from mergeLinkedList import MergeTwoLists
+from mergeLinkedList import Solution, ListNode
 
 def main():
-    tester = MergeTwoLists()
-    print(tester.main([1,2,3,4], [3,4,5,6]))
+    list1 = ListNode(1, ListNode(2, ListNode(4)))
+    list2 = ListNode(2, ListNode(3, ListNode(4)))
+    tester = Solution()
+    print(tester.main(list1, list2))
 
 if __name__ == "__main__":
     main()

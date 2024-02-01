@@ -3,8 +3,17 @@ class ListNode:
         self.value = value
         self.next = next
 
-class MergeTwoLists:
-    def main(list1, list2):
+    def __str__(self, ll):
+        result = []
+        current = ll
+        while current:
+            result.append(current.value)  
+            current = current.next
+
+        return result
+
+class Solution:
+    def main(self,list1, list2):
         merged = output = ListNode()
         while list1 and list2:
             if list1.value < list2.value:
@@ -20,7 +29,7 @@ class MergeTwoLists:
         else:
             output.next = list2
 
-        return merged.next
+        return ListNode().__str__(merged.next)
             
 
 
