@@ -16,7 +16,9 @@ class Solution(object):
 
         while current:
             if current in iter:
-                return current.val
+                return current
             else:
                 iter.add(current)
                 current = current.next
+
+        return None
