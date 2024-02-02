@@ -11,9 +11,11 @@ class Solution(object):
         new_list.next = head
         current = new_list
         
-        while current:
-            if current.val != val:
-                new_list.next.val = current.val
+        while current.next != None:
+            if current.next.val == val:
+                current.next = current.next.next
             else:
                 current = current.next
+
         return new_list.next
+                
