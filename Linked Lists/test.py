@@ -5,7 +5,7 @@ def main():
     #list2 = ListNode(2, ListNode(3, ListNode(4)))
     #val = 4
     tester = Solution()
-    print(tester.removeElements(list1))
+    print(tester.reverseList(list1))
 
 if __name__ == "__main__":
     main()

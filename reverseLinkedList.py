@@ -16,4 +16,4 @@ class Solution(object):
             new_list = current
             current = next_node
 
-        
+        return new_list
