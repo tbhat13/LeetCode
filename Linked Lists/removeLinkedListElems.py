@@ -3,21 +3,17 @@ class ListNode(object):
         self.val = val
         self.next = next
 
-    def append(self, val):
-        new_node = ListNode(val)
-        current = self
-        while current.next:
-            current = current.next
-        
-            current.next = new_node
 
 
 class Solution(object):
     def removeElements(self, head, val):
         new_list = ListNode()
-        current = head
+        new_list.next = head
+        current = new_list
         
         while current:
             if current.val != val:
-                new_list.append(current)
-        return new_list
+                new_list.next.val = current.val
+            else:
+                current = current.next
+        return new_list.next
