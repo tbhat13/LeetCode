@@ -1,4 +1,4 @@
-from middleNode import Solution, ListNode
+from middleNode2 import Solution, ListNode
 
 def main():
     list1 = ListNode(1)
