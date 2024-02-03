@@ -1,4 +1,6 @@
-from addTwoNumbers2 import ListNode, OtherSolution
+from addTwoNumbers import OtherSolution, Solution, ListNode
+
+
 
 def main():
     list1 = ListNode(0)
@@ -22,9 +24,9 @@ def main():
     list2.next.next.next.next.next.next.next.next = ListNode(7)
 
 
-    tester = Solution()
-    print(tester.addTwoNumbers(list1, list2))
-    tester.addTwoNumbers2(list1, list2)
-
+    tester1 = Solution()
+    tester2 = OtherSolution()
+    print(tester1.addTwoNumbers(list1, list2))
+    print(tester2.addTwoNumbers(list1, list2))
 if __name__ == "__main__":
     main()
