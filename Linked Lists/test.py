@@ -1,32 +1,19 @@
-from addTwoNumbers import OtherSolution, Solution, ListNode
+from removeNthNode import OtherSolution, ListNode
 
 
 
 def main():
-    list1 = ListNode(0)
-    list1.next = ListNode(8)
-    list1.next.next = ListNode(6)
-    list1.next.next.next = ListNode(5)
-    list1.next.next.next.next = ListNode(6)
-    list1.next.next.next.next.next = ListNode(8)
-    list1.next.next.next.next.next.next = ListNode(3)
-    list1.next.next.next.next.next.next.next = ListNode(5)
-    list1.next.next.next.next.next.next.next.next = ListNode(7)
+    list1 = ListNode(1)
+    list1.next = ListNode(2)
+    list1.next.next = ListNode(3)
+    list1.next.next.next = ListNode(4)
+    list1.next.next.next.next = ListNode(5)
+    n = 2
 
-    list2 = ListNode(6)
-    list2.next = ListNode(7)
-    list2.next.next = ListNode(8)
-    list2.next.next.next = ListNode(0)
-    list2.next.next.next.next = ListNode(8)
-    list2.next.next.next.next.next = ListNode(5)
-    list2.next.next.next.next.next.next = ListNode(8)
-    list2.next.next.next.next.next.next.next = ListNode(9)
-    list2.next.next.next.next.next.next.next.next = ListNode(7)
+    tester1 = OtherSolution()
+    print(tester1.removeNthFromEnd(list1, n))
 
 
-    tester1 = Solution()
-    tester2 = OtherSolution()
-    print(tester1.addTwoNumbers(list1, list2))
-    print(tester2.addTwoNumbers(list1, list2))
+
 if __name__ == "__main__":
     main()
