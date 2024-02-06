@@ -35,4 +35,5 @@ class Solution(object):
 class OtherSolution(object):
     def rotateRight(self, head, k):
         list1 = sllist(ListNode().display(head))
+        list1.rotate(k)
         return list1
