@@ -1,4 +1,4 @@
-from removeDuplicatesSorted import Solution, ListNode
+from partitionList import Solution, ListNode
 
 
 
@@ -11,17 +11,16 @@ def main():
     list1.next.next.next.next.next = ListNode(4)
     list1.next.next.next.next.next.next = ListNode(4)
     list1.next.next.next.next.next.next.next = ListNode(5)
-    n = 2
+    x = 3
     list2 = ListNode(1)
-    list2.next = ListNode(2)
-    list2.next.next = ListNode(3)
+    list2.next = ListNode(4)
+    list2.next.next = ListNode(5)
     list2.next.next.next = ListNode(3)
-    list2.next.next.next.next = ListNode(4)
-    list2.next.next.next.next.next = ListNode(4)
-    list2.next.next.next.next.next.next = ListNode(5)
+    list2.next.next.next.next = ListNode(5)
+    list2.next.next.next.next.next = ListNode(2)
 
     tester = Solution()
-    print(tester.deleteDuplicates(list1))
+    print(tester.partition(list2, x))
 
 
 
