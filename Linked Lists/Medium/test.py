@@ -1,4 +1,4 @@
-from partitionList import Solution, ListNode
+from reverseLinkedList2 import Solution, ListNode
 
 
 
@@ -11,16 +11,18 @@ def main():
     list1.next.next.next.next.next = ListNode(4)
     list1.next.next.next.next.next.next = ListNode(4)
     list1.next.next.next.next.next.next.next = ListNode(5)
-    x = 3
+    left = 2
+    right = 4
     list2 = ListNode(1)
-    list2.next = ListNode(4)
-    list2.next.next = ListNode(5)
-    list2.next.next.next = ListNode(3)
+    list2.next = ListNode(2)
+    list2.next.next = ListNode(3)
+    list2.next.next.next = ListNode(4)
     list2.next.next.next.next = ListNode(5)
-    list2.next.next.next.next.next = ListNode(2)
+    #list2.next.next.next.next.next = ListNode(6)
+    #list2.next.next.next.next.next.next = ListNode(7)
 
     tester = Solution()
-    print(tester.partition(list2, x))
+    print(tester.reverseBetween(list2, left, right))
 
 
 
